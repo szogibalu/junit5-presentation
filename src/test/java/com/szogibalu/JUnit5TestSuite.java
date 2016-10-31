@@ -6,6 +6,6 @@ import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
 @SelectPackages("com.szogibalu")
-public class Junit5TestSuite {
-	
+public class JUnit5TestSuite {
+
 }
