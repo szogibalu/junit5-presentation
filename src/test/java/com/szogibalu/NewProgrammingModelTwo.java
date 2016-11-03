@@ -25,7 +25,8 @@ public class NewProgrammingModelTwo {
 	@Test
 	void groupedAssertions() {
 		Address address = new Address("John", "Doe");
-		assertAll("address", () -> assertEquals("John", address.getFirstName()),
+		assertAll("address", 
+				() -> assertEquals("John", address.getFirstName()),
 				() -> assertEquals("Doe", address.getLastName()));
 	}
 
