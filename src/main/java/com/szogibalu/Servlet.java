@@ -1,5 +1,5 @@
 package com.szogibalu;
 
-public class Service {
+public class Servlet {
 
 }

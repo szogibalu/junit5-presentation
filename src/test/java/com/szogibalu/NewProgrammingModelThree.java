@@ -6,46 +6,46 @@ import org.junit.jupiter.api.Test;
 
 public class NewProgrammingModelThree {
 
-	private Service systemUnderTest;
+	private Servlet systemUnderTest;
 
 	@Nested
-	@DisplayName("Given")
+	@DisplayName("Init")
 	class Given {
 
 		@Test
-		@DisplayName("I am logged in user")
-		void user() {
+		@DisplayName("Servlet created")
+		void created() {
 		}
 
 		@Test
-		@DisplayName("With 100$")
-		void money() {
+		@DisplayName("Servlet initialized")
+		void initialized() {
 		}
 
 	}
 
 	@Nested
-	@DisplayName("When")
+	@DisplayName("Service")
 	class When {
 
 		@Test
-		@DisplayName("I buy a new game")
-		void buy() {
+		@DisplayName("Getting Information from Requests")
+		void getting() {
+		}
+
+		@Test
+		@DisplayName("Constructing Responses")
+		void constructing() {
 		}
 	}
 
 	@Nested
-	@DisplayName("Then")
+	@DisplayName("Destroy")
 	class Then {
 
 		@Test
-		@DisplayName("Game has been ordered")
-		void game() {
-		}
-
-		@Test
-		@DisplayName("I still have 50$")
-		void money() {
+		@DisplayName("Servlet removed")
+		void removed() {
 		}
 
 	}
