@@ -9,7 +9,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-import com.szogibalu.annotations.DisabledForTheMeetup;
+import com.szogibalu.annotations.MeetupTest;
 
 class NewProgrammingModelOne {
 
@@ -40,9 +40,8 @@ class NewProgrammingModelOne {
 	void disabledTest() {
 	}
 
-	@Test
-	@DisabledForTheMeetup
-	void shittyTest() {
+	@MeetupTest
+	void meetupTest() {
 
 	}
 
