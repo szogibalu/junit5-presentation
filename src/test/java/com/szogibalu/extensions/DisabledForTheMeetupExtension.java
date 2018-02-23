@@ -1,16 +1,16 @@
 package com.szogibalu.extensions;
 
+import org.junit.jupiter.api.extension.ConditionEvaluationResult;
+import org.junit.jupiter.api.extension.ExecutionCondition;
+import org.junit.jupiter.api.extension.ExtensionContext;
+
 import static org.junit.jupiter.api.extension.ConditionEvaluationResult.disabled;
 import static org.junit.jupiter.api.extension.ConditionEvaluationResult.enabled;
 
-import org.junit.jupiter.api.extension.ConditionEvaluationResult;
-import org.junit.jupiter.api.extension.TestExecutionCondition;
-import org.junit.jupiter.api.extension.TestExtensionContext;
-
-public class DisabledForTheMeetupExtension implements TestExecutionCondition {
+public class DisabledForTheMeetupExtension implements ExecutionCondition {
 
 	@Override
-	public ConditionEvaluationResult evaluate(TestExtensionContext context) {
+    public ConditionEvaluationResult evaluateExecutionCondition(ExtensionContext context) {
 		if (isMeetupDay()) {
 			return disabled("Volkswagen style");
 		} else {
