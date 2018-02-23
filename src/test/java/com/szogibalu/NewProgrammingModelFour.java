@@ -1,26 +1,24 @@
 package com.szogibalu;
 
-import static java.time.LocalDateTime.now;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.junit.jupiter.api.*;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInfo;
-import org.junit.jupiter.api.TestReporter;
+import static java.time.LocalDateTime.now;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class NewProgrammingModelFour {
 
+    private static final String MY_TAG = "my-tag";
+
 	@Test
 	@DisplayName("dummy test")
-	@Tag("my tag")
+    @Tag(MY_TAG)
 	void dummyTest(TestInfo testInfo) {
 		assertEquals("dummy test", testInfo.getDisplayName());
-		assertTrue(testInfo.getTags().contains("my tag"));
+        assertTrue(testInfo.getTags().contains(MY_TAG));
 	}
 
 	@Test
