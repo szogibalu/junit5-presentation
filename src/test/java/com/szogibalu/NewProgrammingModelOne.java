@@ -13,36 +13,34 @@ import com.szogibalu.annotations.MeetupTest;
 
 class NewProgrammingModelOne {
 
-	@BeforeAll
-	static void initAll() {
-	}
+    @BeforeAll
+    static void initAll() {
+    }
 
-	@BeforeEach
-	void init() {
-	}
+    @BeforeEach
+    void init() {
+    }
 
-	@AfterEach
-	void tearDown() {
-	}
+    @AfterEach
+    void tearDown() {
+    }
 
-	@AfterAll
-	static void tearDownAll() {
-	}
+    @AfterAll
+    static void tearDownAll() {
+    }
 
-	@Test
-	@DisplayName("Java meetup test")
-	@Tag("java_meetup")
-	void test() {
-	}
+    @Test
+    @DisplayName("\uD83D\uDCA9\uD83D\uDCA9\uD83D\uDCA9")
+    void bestFeature() {
+    }
 
-	@Test
-	@Disabled
-	void disabledTest() {
-	}
+    @Test
+    @Disabled
+    void disabledTest() {
+    }
 
-	@MeetupTest
-	void meetupTest() {
-
-	}
+    @MeetupTest
+    void meetupTest() {
+    }
 
 }

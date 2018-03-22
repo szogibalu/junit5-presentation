@@ -2,6 +2,7 @@ package com.szogibalu;
 
 import org.junit.jupiter.api.Test;
 
+import static java.time.Duration.ofMillis;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 import static org.junit.jupiter.api.Assumptions.assumingThat;
@@ -56,6 +57,17 @@ public class NewProgrammingModelTwo {
 
 		// perform these assertions in all environments
 		assertEquals("a string", "a string");
+	}
+
+
+	@Test
+	void timeoutExceededWithPreemptiveTermination() {
+		assertTimeoutPreemptively(ofMillis(10), () -> Thread.sleep(1000));
+	}
+
+	@Test
+	void timeoutExceeded() {
+		assertTimeout(ofMillis(10), () -> Thread.sleep(1000));
 	}
 
 }
